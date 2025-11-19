@@ -1195,7 +1195,7 @@ body {
 /* ====== MESSAGE TEXT (TYPEWRITER) ====== */
 .message {
   position: fixed;
-  bottom: 10vh;
+  top: 10vh;
   left: 50%;
   transform: translateX(-50%);
   font-size: 5vmin;
