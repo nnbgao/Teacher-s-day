@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flowers for Teachers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .falling-petal {
+      position: fixed;
+      top: -10vh;
+      background: linear-gradient(to bottom right, #ffc0cb, #ff69b4);
+      width: 15px;
+      height: 15px;
+      border-radius: 100% 0% 100% 0%;
+      opacity: 0.8;
+      z-index: 2000;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.5);
+      animation: falling linear forwards;
+      pointer-events: none;
+    }
+    @keyframes falling {
+      0% { top: -10vh; transform: translateX(0) rotate(0deg); opacity: 1; }
+      100% { top: 110vh; transform: translateX(100px) rotate(720deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<audio id="myAudio" loop>
+  <source src="1.mp3" type="audio/mpeg">
+</audio>
+
+<div class="night"></div>
+<div class="flowers"></div>
+
+<div class="message">Chúc mừng Ngày Nhà Giáo Việt Nam 20/11</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
